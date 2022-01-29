@@ -36,10 +36,20 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		
+		<!-- Utilizado para realizar a comunicações entre os microserviços -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
+		
+		<!-- Utilizado para realizar o balanceamento de carga das instancias -->
+		<!-- Dependência descontinuada para as versões mais recentes do spring -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+		</dependency>
+		
 	</dependencies>
 
 	<build>
